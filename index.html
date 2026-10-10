@@ -24,6 +24,22 @@ dialog{border:1px solid var(--line);border-radius:18px;background:#10182b;color:
 .callout{padding:13px 15px;border:1px solid var(--line);border-radius:14px;background:#0f1730;color:#cbd7ef;font-size:13px}.kicker{font-size:11px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.08em}.empty{color:var(--muted);padding:18px;text-align:center}
 @media(max-width:980px){.app{grid-template-columns:1fr}.sidebar{position:relative;height:auto;border-right:0;border-bottom:1px solid var(--line)}.nav{grid-template-columns:repeat(3,1fr)}.sidebar .tip{display:none}.grid4{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.topbar{align-items:flex-start;flex-direction:column}.progress-row{grid-template-columns:130px 1fr 58px}}
 @media(max-width:600px){main{padding:18px}.grid4{grid-template-columns:1fr 1fr}.nav{grid-template-columns:repeat(2,1fr)}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.calendar{min-width:1320px}.metric .num{font-size:22px}}
+/* Novas funcionalidades: reincidência, revisões, microaula, mapa de erros, prova amanhã */
+.nav button.star{color:#e0f2fe;border:1px solid #1e4f74;background:rgba(14,165,233,.1);font-weight:800}.nav button.star.active,.nav button.star:hover{background:#0c4a6e;border-color:#0ea5e9}
+.flags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px}.flags .tag{margin-bottom:0}.flag{display:inline-flex;align-items:center;font-size:9.5px;font-weight:800;letter-spacing:.05em;padding:3px 6px;border-radius:999px;border:1px solid transparent;text-transform:uppercase}.flag.rev{background:#0c4a6e;color:#bae6fd;border-color:#0369a1}.flag.hot{background:#450a0a;color:#fecaca;border-color:#991b1b}.flag.late{background:transparent;color:#fca5a5;border-color:#ef4444}.flag.micro{background:#052e1a;color:#bbf7d0;border-color:#166534}.flag.micro.weak{background:#2b230a;color:#fde68a;border-color:#a16207}
+.mini.micro{border-color:#1d4f73;color:#bae6fd}.mini.rev{border-color:#334e7a;color:#c7d7fe}.auto-rev{display:flex;align-items:center;gap:6px;margin-top:7px;font-size:10.5px;color:var(--muted);cursor:pointer}.auto-rev input{accent-color:#0ea5e9;margin:0}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;flex:none}.dot.alta{background:#ef4444;box-shadow:0 0 0 3px rgba(239,68,68,.18)}.dot.media{background:#f97316;box-shadow:0 0 0 3px rgba(249,115,22,.18)}.dot.atencao{background:#facc15;box-shadow:0 0 0 3px rgba(250,204,21,.18)}
+.alert-list{display:grid;gap:10px}.alert{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#0f1730}.alert .dot{margin-top:5px}.alert.alta{border-color:#7f1d1d}.alert.media{border-color:#7c2d12}.alert.atencao{border-color:#713f12}.alert strong{font-size:14px}.alert p{margin:3px 0 0;font-size:12.5px;color:#cbd7ef;line-height:1.45}.alert .meta{font-size:11px;color:var(--muted);margin-top:5px}
+.type-row{display:grid;grid-template-columns:120px 1fr 92px;gap:10px;align-items:center;margin:9px 0;font-size:13px}.type-row .bar{height:12px}.type-row .val{text-align:right;font-variant-numeric:tabular-nums}.type-row .trend{display:block;font-size:10.5px;color:var(--muted)}.stack{display:flex;height:12px;border-radius:999px;overflow:hidden;background:#22304c;margin:8px 0}.stack i{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:11.5px;color:#cbd7ef}.legend span{display:inline-flex;align-items:center;gap:6px}.legend b{display:inline-block;width:9px;height:9px;border-radius:3px}
+.content-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}.mini-card{padding:14px;border:1px solid var(--line);border-radius:14px;background:#0f1730}.mini-card h4{margin:0;font-size:14px}.mini-card .advice{font-size:12px;color:#bae6fd;margin-top:8px}
+.rank{display:grid;gap:14px}.rank-item{padding:18px;display:grid;gap:12px}.rank-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.rank-num{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-weight:900;background:#0c4a6e;color:#e0f2fe;flex:none}.rank-head h3{margin:0;font-size:19px}.rank-head .score{margin-left:auto;text-align:right}.rank-head .score b{font-size:24px;font-weight:900}.rank-head .score small{display:block;font-size:11px;color:var(--muted)}.rank-item.alta .rank-num{background:#7f1d1d;color:#fee2e2}.rank-item.media .rank-num{background:#7c2d12;color:#ffedd5}
+.score-bar{height:8px;border-radius:999px;background:#22304c;overflow:hidden}.score-bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#facc15,#f97316,#ef4444)}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}.kv div{padding:9px 11px;border:1px solid var(--line);border-radius:11px;background:#0f1730}.kv span{display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}.kv b{font-size:14px}
+.reasons{margin:0;padding-left:18px;font-size:12.5px;color:#cbd7ef;line-height:1.55}.reco{padding:12px 14px;border-left:4px solid #0ea5e9;border-radius:10px;background:rgba(14,165,233,.08);font-size:13.5px}.reco strong{display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:4px}.rank-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.timer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px;border:1px solid var(--line);border-radius:14px;background:#0b1328;margin-bottom:14px}.timer-num{font-size:40px;font-weight:900;font-variant-numeric:tabular-nums;letter-spacing:.02em}.timer-num.over{color:#fca5a5}.checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:8px 0 14px}.checklist label{display:flex;gap:8px;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:#0d1528;font-size:13px;cursor:pointer}.checklist input{accent-color:#16a34a}.checklist label:has(input:checked){border-color:#166534;background:#052e1a}
+.toast{position:fixed;right:20px;bottom:20px;z-index:50;max-width:360px;padding:12px 16px;border:1px solid #0369a1;border-radius:12px;background:#0c1d33;color:var(--txt);box-shadow:var(--shadow);font-size:13px}
+@media(max-width:600px){.type-row{grid-template-columns:90px 1fr 70px}.checklist{grid-template-columns:1fr}.timer-num{font-size:32px}}
 </style>
 </head>
 <body>
@@ -32,6 +48,7 @@ dialog{border:1px solid var(--line);border-radius:18px;background:#10182b;color:
     <div class="brand">FOCO ENEM <small>Domínio de questões médias até 10/11</small></div>
     <div class="nav">
       <button data-view="painel" class="active">Painel</button>
+      <button data-view="amanha" class="star">Se a prova fosse amanhã</button>
       <button data-view="cronograma">Cronograma</button>
       <button data-view="progresso">Progresso</button>
       <button data-view="erros">Caderno de erros</button>
@@ -68,6 +85,39 @@ const subjectRules={
 'Termologia':'Explicar o fenômeno fisicamente antes da fórmula.',
 'Ondulatória / óptica':'Identificar o que muda e o que permanece constante no fenômeno.'
 };
+const SCHEMA_VERSION=4;
+const ALL_CONTENTS=[...priorities.MAT,...priorities.CN];
+const CONTENT_AREAS=['MAT','CN'];
+const ERROR_TYPES=['Conteúdo','Interpretação','Estratégia','Cálculo','Distração','Falta de tempo'];
+const TYPE_COLORS={'Conteúdo':'#38bdf8','Interpretação':'#a78bfa','Estratégia':'#f97316','Cálculo':'#facc15','Distração':'#f472b6','Falta de tempo':'#22c55e'};
+const TYPE_ADVICE={'Conteúdo':'Faça microaula + lista direcionada.','Interpretação':'Faça blocos variados e explique o que o enunciado está pedindo antes da conta.','Estratégia':'Treine reconhecimento do método antes de calcular.','Cálculo':'Faça treino operacional curto.','Distração':'Use checklist final antes de marcar.','Falta de tempo':'Treine blocos cronometrados.'};
+const REVIEW_PLAN=[
+  {type:'D+2',days:2,duration:30,mode:'5–8 questões + revisar erro principal'},
+  {type:'D+7',days:7,duration:40,mode:'8–12 questões médias sem consulta'},
+  {type:'D+14',days:14,duration:45,mode:'Questões misturadas com outros conteúdos'}
+];
+const RECENT_DAYS=10;
+const MIN_QUESTIONS_FOR_ACC=5;
+const SESSION_ERROR_CAP=3;
+const MICRO_SECONDS=15*60;
+const checklists={
+'Geometria':['Área','Perímetro','Semelhança','Escala','Volume','Circunferência','Interpretação da figura'],
+'Razão / proporção / porcentagem':['Razão','Proporção direta','Proporção inversa','Regra de três','Porcentagem de um valor','Aumentos e descontos sucessivos','Conversão de unidades'],
+'Funções e modelagem':['Variáveis dependente e independente','Função afim','Função quadrática','Função exponencial','Leitura de gráfico','Texto → equação','Taxa de variação'],
+'Estatística e gráficos':['Média','Mediana','Moda','Leitura de tabelas','Leitura de gráficos','Frequência relativa','Desvio padrão (ideia)'],
+'Probabilidade e combinatória':['Princípio fundamental da contagem','Permutação','Combinação','Ordem importa?','Probabilidade simples','Evento complementar','Probabilidade condicional'],
+'Sequências / PA / PG':['Termo geral da PA','Soma da PA','Termo geral da PG','Soma da PG','Razão da sequência','Reconhecer o padrão no enunciado'],
+'Trigonometria':['Seno, cosseno e tangente','Triângulo retângulo','Ângulos notáveis','Lei dos senos','Lei dos cossenos','Ciclo trigonométrico','Funções periódicas'],
+'Mecânica / dinâmica':['Forças','Diagrama de forças','Aceleração','Trabalho','Energia','Potência','Conservação'],
+'Estequiometria / soluções':['Mol','Massa molar','Proporção da reação','Reagente limitante','Rendimento','Pureza','Concentração'],
+'Eletrodinâmica':['Corrente elétrica','Tensão','Resistência','Lei de Ohm','Associação em série','Associação em paralelo','Potência','Consumo de energia'],
+'Química orgânica':['Funções orgânicas','Nomenclatura','Isomeria','Polaridade e interações','Propriedades físicas','Reações orgânicas','Polímeros'],
+'Genética / biotecnologia':['DNA → RNA → proteína','Leis de Mendel','Heredogramas','Probabilidade genética','Mutação','Engenharia genética','Clonagem e transgênicos'],
+'Ecologia':['Cadeias e teias alimentares','Fluxo de energia','Ciclos biogeoquímicos','Relações ecológicas','Sucessão ecológica','Impactos ambientais','Biomas brasileiros'],
+'Termologia':['Temperatura e calor','Escalas termométricas','Calor sensível','Calor latente','Trocas de calor','Dilatação','Propagação de calor'],
+'Ondulatória / óptica':['Elementos de uma onda','v = λ·f','Reflexão','Refração','Espelhos','Lentes','Fenômenos ondulatórios']
+};
+const DEFAULT_CHECKLIST=['Conceito central','Mecanismo','Relações / fórmulas','Interpretação do enunciado','Armadilhas comuns'];
 function uid(){return Math.random().toString(36).slice(2)+Date.now().toString(36)}
 function d(s){return new Date(s+'T12:00:00')}
 function iso(dt){return dt.toISOString().slice(0,10)}
@@ -92,9 +142,20 @@ function initialTasks(){
   ['2026-11-08','2026-11-09','2026-11-10'].forEach((date,i)=>push(date,'REVISÃO',i===0?'Caderno de erros + fórmulas':i===1?'Questões médias já erradas':'Revisão leve + padrões essenciais','08:00',i===2?'Sem conteúdo novo. Revisar padrões e manter confiança.':'Revisar sem maratona; refazer e explicar erros recorrentes.'));
   return arr;
 }
-function initialState(){return {tasks:initialTasks(),errors:[],weekStart:'2026-10-08',view:'painel'}}
+function initialState(){return {tasks:initialTasks(),errors:[],microLessons:[],weekStart:'2026-10-08',view:'painel',schemaVersion:SCHEMA_VERSION}}
+// Migração não destrutiva: só acrescenta campos novos, nunca remove os antigos.
+function migrate(x){
+ if(!x||!Array.isArray(x.tasks))return null;
+ x.tasks=x.tasks.filter(Boolean).map(t=>({hits:'',misses:'',note:'',done:false,...t}));
+ x.errors=Array.isArray(x.errors)?x.errors.filter(Boolean):[];
+ x.microLessons=Array.isArray(x.microLessons)?x.microLessons.filter(Boolean):[];
+ x.weekStart=x.weekStart||START;
+ x.view=x.view||'painel';
+ x.schemaVersion=SCHEMA_VERSION;
+ return x;
+}
 let state=load();
-function load(){try{const x=JSON.parse(localStorage.getItem(STORAGE_KEY));if(x&&Array.isArray(x.tasks))return x}catch(e){}return initialState()}
+function load(){try{const x=migrate(JSON.parse(localStorage.getItem(STORAGE_KEY)));if(x)return x}catch(e){}return initialState()}
 function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(state))}
 function stats(){
  const done=state.tasks.filter(t=>t.done).length,total=state.tasks.length;
@@ -105,19 +166,32 @@ function contentStats(){
  const map={};state.tasks.forEach(t=>{if(['MISTO','ADAPTATIVO','REVISÃO'].includes(t.area))return;let x=map[t.content]||(map[t.content]={h:0,m:0,s:0});x.h+=Number(t.hits)||0;x.m+=Number(t.misses)||0;x.s++});
  return Object.entries(map).map(([content,x])=>({content,...x,acc:x.h+x.m?Math.round(x.h/(x.h+x.m)*100):null})).sort((a,b)=>(a.acc??-1)-(b.acc??-1));
 }
-function nav(){return `<div class="topbar"><div><h1>${state.view==='painel'?'Painel de domínio':state.view==='cronograma'?'Cronograma editável':state.view==='progresso'?'Progresso por conteúdo':state.view==='erros'?'Caderno de erros':'Método de estudo'}</h1><p>Meta: transformar conteúdos recorrentes em acertos consistentes de questões médias.</p></div><div class="actions"><button class="btn" onclick="exportData()">Exportar backup</button><button class="btn" onclick="importData()">Importar</button><button class="btn primary" onclick="openTask()">+ Tarefa</button></div></div>`}
-function render(){document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===state.view));document.getElementById('appMain').innerHTML=nav()+({painel:panelView,cronograma:calendarView,progresso:progressView,erros:errorsView,metodo:methodView}[state.view])();attachDnD()}
+const VIEW_TITLES={painel:'Painel de domínio',amanha:'Se a prova fosse amanhã',cronograma:'Cronograma editável',progresso:'Progresso por conteúdo',erros:'Caderno de erros',metodo:'Método de estudo'};
+function nav(){return `<div class="topbar"><div><h1>${VIEW_TITLES[state.view]||'Painel de domínio'}</h1><p>Meta: transformar conteúdos recorrentes em acertos consistentes de questões médias.</p></div><div class="actions"><button class="btn" onclick="exportData()">Exportar backup</button><button class="btn" onclick="importData()">Importar</button><button class="btn primary" onclick="openTask()">+ Tarefa</button></div></div>`}
+let insights=[],insightMap={};
+function render(){insights=analyze();insightMap=Object.fromEntries(insights.map(x=>[x.content,x]));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===state.view));const views={painel:panelView,amanha:tomorrowView,cronograma:calendarView,progresso:progressView,erros:errorsView,metodo:methodView};document.getElementById('appMain').innerHTML=nav()+(views[state.view]||panelView)();attachDnD()}
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;save();render()});
-function panelView(){const s=stats();return `<section class="section active"><div class="grid4"><div class="card metric"><div class="label">Progresso</div><div class="num">${s.progress}%</div><div class="sub">${s.done}/${s.total} blocos concluídos</div></div><div class="card metric"><div class="label">Questões registradas</div><div class="num">${s.h+s.m}</div><div class="sub">acertos + erros</div></div><div class="card metric"><div class="label">Precisão</div><div class="num">${s.acc||'—'}${s.h+s.m?'%':''}</div><div class="sub">referência: 85–90% específica</div></div><div class="card metric"><div class="label">Erros catalogados</div><div class="num">${state.errors.length}</div><div class="sub">conteúdo · interpretação · estratégia · cálculo</div></div></div><div class="split"><div><div class="section-title"><h2>Fases até 10/11</h2></div><div class="card panel">${phases.map(p=>`<div class="phase"><strong>${formatDate(p.start)}–${formatDate(p.end)} · ${p.name}</strong><small>${p.desc}</small></div>`).join('')}</div></div><div><div class="section-title"><h2>Próximos blocos</h2></div><div class="card panel">${state.tasks.filter(t=>!t.done&&t.date>=START).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time)).slice(0,6).map(t=>`<div class="phase"><strong>${formatDate(t.date)} · ${t.content}</strong><small>${t.area} · ${t.time} · ${t.duration} min</small></div>`).join('')||'<div class="empty">Tudo concluído.</div>'}</div></div></div><div class="section-title"><h2>Prioridade</h2><span>Mais recorrentes e com melhor retorno primeiro</span></div><div class="split"><div class="card panel"><div class="kicker">Matemática</div>${priorities.MAT.map((x,i)=>`<p><strong>${i+1}. ${x}</strong></p>`).join('')}</div><div class="card panel"><div class="kicker">Ciências da Natureza</div>${priorities.CN.map((x,i)=>`<p><strong>${i+1}. ${x}</strong></p>`).join('')}</div></div></section>`}
+function panelView(){const s=stats();return `<section class="section active"><div class="grid4"><div class="card metric"><div class="label">Progresso</div><div class="num">${s.progress}%</div><div class="sub">${s.done}/${s.total} blocos concluídos</div></div><div class="card metric"><div class="label">Questões registradas</div><div class="num">${s.h+s.m}</div><div class="sub">acertos + erros</div></div><div class="card metric"><div class="label">Precisão</div><div class="num">${s.acc||'—'}${s.h+s.m?'%':''}</div><div class="sub">referência: 85–90% específica</div></div><div class="card metric"><div class="label">Erros catalogados</div><div class="num">${state.errors.length}</div><div class="sub">conteúdo · interpretação · estratégia · cálculo</div></div></div><div class="section-title"><h2>Alertas de reincidência</h2><span>Conteúdos que voltam a aparecer nos seus erros</span></div><div class="card panel">${alertsHtml()}</div><div class="split"><div><div class="section-title"><h2>Fases até 10/11</h2></div><div class="card panel">${phases.map(p=>`<div class="phase"><strong>${formatDate(p.start)}–${formatDate(p.end)} · ${p.name}</strong><small>${p.desc}</small></div>`).join('')}</div></div><div><div class="section-title"><h2>Próximos blocos</h2></div><div class="card panel">${state.tasks.filter(t=>!t.done&&t.date>=START).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time)).slice(0,6).map(t=>`<div class="phase"><strong>${formatDate(t.date)} · ${t.content}</strong><small>${t.area} · ${t.time} · ${t.duration} min</small></div>`).join('')||'<div class="empty">Tudo concluído.</div>'}</div></div></div><div class="section-title"><h2>Prioridade</h2><span>Mais recorrentes e com melhor retorno primeiro</span></div><div class="split"><div class="card panel"><div class="kicker">Matemática</div>${priorities.MAT.map((x,i)=>`<p><strong>${i+1}. ${x}</strong></p>`).join('')}</div><div class="card panel"><div class="kicker">Ciências da Natureza</div>${priorities.CN.map((x,i)=>`<p><strong>${i+1}. ${x}</strong></p>`).join('')}</div></div></section>`}
 function calendarView(){return `<section class="section active"><div class="section-title"><div class="week-nav"><button class="btn" onclick="shiftWeek(-7)">←</button><div class="week-label">${formatDate(state.weekStart)} – ${formatDate(addDays(state.weekStart,6))}</div><button class="btn" onclick="shiftWeek(7)">→</button></div><span>Arraste um bloco para outro dia.</span></div><div class="calendar-wrap"><div class="calendar">${Array.from({length:7},(_,i)=>dayHtml(addDays(state.weekStart,i))).join('')}</div></div><div class="callout">✓ Acertos e ✕ erros são salvos automaticamente. Use <strong>+ Observação</strong> para registrar uma anotação particular daquele bloco. Tudo fica neste navegador via localStorage.</div></section>`}
 function dayHtml(date){const ts=state.tasks.filter(t=>t.date===date).sort((a,b)=>a.time.localeCompare(b.time));const p=phaseFor(date);return `<div class="day" data-date="${date}"><div class="day-head"><strong>${weekday(date)} ${formatDate(date)}</strong><span>${p?p.name:''}</span></div>${ts.map(taskHtml).join('')}<button class="mini" onclick="openTask(null,'${date}')">+ adicionar</button></div>`}
-function taskHtml(t){return `<div class="task ${t.done?'done':''}" draggable="true" data-id="${t.id}"><span class="tag">${esc(t.area)}</span><div class="task-title">${esc(t.time)} · ${esc(t.content)}</div><div class="task-meta">${t.duration} min · ${esc(t.mode)}</div><div class="task-score"><input aria-label="Acertos" title="Acertos" type="number" min="0" placeholder="✓" value="${esc(t.hits)}" onchange="score('${t.id}','hits',this.value)"><input aria-label="Erros" title="Erros" type="number" min="0" placeholder="✕" value="${esc(t.misses)}" onchange="score('${t.id}','misses',this.value)"></div>${t.note?`<div class="task-observation"><strong>Observação</strong>${esc(t.note)}</div>`:''}<div class="task-actions"><button class="mini" onclick="toggleDone('${t.id}')">${t.done?'Reabrir':'Concluir'}</button><button class="mini" onclick="openTask('${t.id}')">Editar</button><button class="mini obs ${t.note?'has-note':''}" onclick="openObservation('${t.id}')">${t.note?'📝 Ver/editar obs.':'＋ Observação'}</button></div></div>`}
-function progressView(){const rows=contentStats();return `<section class="section active"><div class="callout">Use a precisão como diagnóstico, não como garantia. Referência: ~85–90% em listas específicas e ~80–85% quando o conteúdo aparece misturado.</div><div class="card panel" style="margin-top:14px">${rows.map(x=>{let a=x.acc??0;return `<div class="progress-row"><div>${esc(x.content)}</div><div class="bar"><i style="width:${a}%"></i></div><div>${x.acc==null?'sem dados':x.acc+'%'}</div></div>`}).join('')}</div></section>`}
-function errorsView(){return `<section class="section active"><div class="actions" style="margin-bottom:12px"><button class="btn good" onclick="openError()">+ Registrar erro</button></div><div class="card panel"><table class="table"><thead><tr><th>Data</th><th>Conteúdo</th><th>Tipo</th><th>Observação</th><th></th></tr></thead><tbody>${state.errors.sort((a,b)=>b.date.localeCompare(a.date)).map(e=>`<tr><td>${formatDate(e.date)}</td><td>${esc(e.content)}</td><td><span class="badge">${esc(e.type)}</span></td><td>${esc(e.note)}</td><td><button class="mini" onclick="deleteError('${e.id}')">Excluir</button></td></tr>`).join('')||'<tr><td colspan="5" class="empty">Nenhum erro registrado.</td></tr>'}</tbody></table></div></section>`}
+function taskHtml(t){
+ const c=canonical(t.content),info=insightMap[c],flags=[];
+ if(t.reviewType)flags.push('<span class="flag rev">'+esc(t.reviewType)+'</span>');
+ if(isOverdueReview(t))flags.push('<span class="flag late">Revisão atrasada</span>');
+ if(!t.done&&isContentTask(t)&&info&&(info.level==='alta'||info.level==='media'))flags.push('<span class="flag hot" title="'+esc(info.alertReason)+'">Reincidente</span>');
+ const lesson=latestLesson(l=>l.taskId===t.id);
+ if(lesson){const tot=lesson.masteredTopics.length+lesson.weakTopics.length;flags.push('<span class="flag micro '+(lesson.weakTopics.length?'weak':'')+'">Microaula '+lesson.masteredTopics.length+'/'+tot+'</span>')}
+ const title=t.reviewType?'Revisão '+t.reviewType+' · '+t.content:t.content;
+ const reviewCount=canReview(t)?state.tasks.filter(x=>x.parentTaskId===t.id&&x.reviewType).length:0;
+ const extra=(isContentTask(t)?'<button class="mini micro" onclick="openMicro(\''+t.id+'\')">Microaula</button>':'')+(canReview(t)?'<button class="mini rev" aria-label="Gerar revisões D+2 / D+7 / D+14" title="Gerar revisões D+2 / D+7 / D+14" onclick="manualReviews(\''+t.id+'\')">'+(reviewCount?'Revisões '+reviewCount+'/3':'Gerar D+2/7/14')+'</button>':'');
+ const auto=canReview(t)?'<label class="auto-rev"><input type="checkbox" '+(t.autoReview!==false?'checked':'')+' onchange="setAutoReview(\''+t.id+'\',this.checked)"> Criar revisões automáticas</label>':'';
+ return `<div class="task ${t.done?'done':''}" draggable="true" data-id="${t.id}"><div class="flags"><span class="tag">${esc(t.area)}</span>${flags.join('')}</div><div class="task-title">${esc(t.time)} · ${esc(title)}</div><div class="task-meta">${t.duration} min · ${esc(t.mode)}</div><div class="task-score"><input aria-label="Acertos" title="Acertos" type="number" min="0" placeholder="✓" value="${esc(t.hits)}" onchange="score('${t.id}','hits',this.value)"><input aria-label="Erros" title="Erros" type="number" min="0" placeholder="✕" value="${esc(t.misses)}" onchange="score('${t.id}','misses',this.value)"></div>${t.note?`<div class="task-observation"><strong>Observação</strong>${esc(t.note)}</div>`:''}<div class="task-actions"><button class="mini" onclick="toggleDone('${t.id}')">${t.done?'Reabrir':'Concluir'}</button><button class="mini" onclick="openTask('${t.id}')">Editar</button><button class="mini obs ${t.note?'has-note':''}" onclick="openObservation('${t.id}')">${t.note?'📝 Ver/editar obs.':'＋ Observação'}</button>${extra}</div>${auto}</div>`}
+function progressView(){const rows=contentStats();const rec=insights.filter(x=>x.sessions>0||x.acc!=null).sort((a,b)=>b.recurrenceScore-a.recurrenceScore);const lessons=[...state.microLessons].sort((a,b)=>(b.createdAt||b.date).localeCompare(a.createdAt||a.date)).slice(0,8);return `<section class="section active"><div class="callout">Use a precisão como diagnóstico, não como garantia. Referência: ~85–90% em listas específicas e ~80–85% quando o conteúdo aparece misturado.</div><div class="card panel" style="margin-top:14px">${rows.map(x=>{let a=x.acc??0;return `<div class="progress-row"><div>${esc(x.content)}</div><div class="bar"><i style="width:${a}%"></i></div><div>${x.acc==null?'sem dados':x.acc+'%'}</div></div>`}).join('')}</div><div class="section-title"><h2>Reincidência por conteúdo</h2><span>Sessão = dia com erro naquele conteúdo · recentes = últimos ${RECENT_DAYS} dias</span></div><div class="card panel" style="overflow:auto">${rec.length?`<table class="table"><thead><tr><th>Conteúdo</th><th>Sessões com erro</th><th>Erros recentes</th><th>Total de erros</th><th>Precisão</th><th>Score</th><th>Nível</th></tr></thead><tbody>${rec.map(x=>`<tr><td>${esc(x.content)}</td><td>${x.sessions}</td><td>${x.recentErrors}</td><td>${x.totalErrors}</td><td>${x.acc==null?'<span style="color:var(--muted)">dados insuficientes</span>':`<span class="${accClass(x.acc)}">${x.acc}%</span>`}</td><td><strong>${x.recurrenceScore}</strong></td><td>${x.level?`<span class="dot ${x.level}" aria-hidden="true"></span> ${LEVEL_LABEL[x.level]}`:'—'}</td></tr>`).join('')}</tbody></table>`:'<div class="empty">Ainda não há erros ou questões registradas.</div>'}</div><div class="section-title"><h2>Microaulas recentes</h2><span>Tópicos não dominados entram na prioridade</span></div><div class="card panel" style="overflow:auto">${lessons.length?`<table class="table"><thead><tr><th>Data</th><th>Conteúdo</th><th>Duração</th><th>Dominados</th><th>Lacunas</th><th>Explicou?</th><th>Observação</th></tr></thead><tbody>${lessons.map(l=>`<tr><td>${formatDate(l.date)}</td><td>${esc(l.content)}</td><td>${l.duration} min</td><td>${l.masteredTopics.length}/${l.masteredTopics.length+l.weakTopics.length}</td><td>${esc(l.weakTopics.join(', ')||'—')}</td><td>${l.explained?'<span class="high">Sim</span>':'<span class="low">Não</span>'}</td><td>${esc(l.note||'')}</td></tr>`).join('')}</tbody></table>`:'<div class="empty">Nenhuma microaula registrada. Use o botão <strong>Microaula</strong> nas tarefas do cronograma.</div>'}</div></section>`}
+function errorsView(){return `<section class="section active"><div class="actions" style="margin-bottom:12px"><button class="btn good" onclick="openError()">+ Registrar erro</button></div>${whyHtml()}<div class="section-title"><h2>Registros</h2><span>${state.errors.length} erro(s) no caderno</span></div><div class="card panel" style="overflow:auto"><table class="table"><thead><tr><th>Data</th><th>Conteúdo</th><th>Tipo</th><th>Observação</th><th></th></tr></thead><tbody>${state.errors.sort((a,b)=>b.date.localeCompare(a.date)).map(e=>`<tr><td>${formatDate(e.date)}</td><td>${esc(e.content)}</td><td><span class="badge">${esc(e.type)}</span></td><td>${esc(e.note)}</td><td><button class="mini" onclick="deleteError('${e.id}')">Excluir</button></td></tr>`).join('')||'<tr><td colspan="5" class="empty">Nenhum erro registrado.</td></tr>'}</tbody></table></div></section>`}
 function methodView(){const all=[...priorities.MAT,...priorities.CN];return `<section class="section active"><div class="split"><div class="card panel"><div class="kicker">Ciclo de domínio</div><h3>1. Explique sem consulta</h3><p>10–25 min. Conceito → mecanismo → relações/fórmulas → interpretação → armadilhas.</p><h3>2. Questões médias direcionadas</h3><p>Faça 12–20 e corrija logo depois. Não transforme a sessão em aula longa.</p><h3>3. Revisão espaçada</h3><p>Reencontre o padrão em aproximadamente 2–3, 7 e 14 dias.</p><h3>4. Questões misturadas</h3><p>O objetivo final é reconhecer a ferramenta sem alguém dizer qual conteúdo está sendo cobrado.</p><h3>5. Cronometrado</h3><p>Na reta final, execute em blocos semelhantes à prova e classifique erros.</p></div><div class="card panel"><div class="kicker">Método por conteúdo</div>${all.map(x=>`<p><strong>${esc(x)}</strong><br><span style="color:var(--muted)">${esc(subjectRules[x]||'Treinar reconhecimento, execução e correção do padrão.')}</span></p>`).join('')}</div></div></section>`}
 function shiftWeek(n){let x=addDays(state.weekStart,n);if(x<START)x=START;if(x>END)x=addDays(END,-6);state.weekStart=x;save();render()}
 function score(id,k,v){let t=state.tasks.find(t=>t.id===id);if(t)t[k]=v;save()}
-function toggleDone(id){let t=state.tasks.find(t=>t.id===id);if(t)t.done=!t.done;save();render()}
+function toggleDone(id){let t=state.tasks.find(t=>t.id===id);if(!t)return;t.done=!t.done;let created=0;if(t.done&&canReview(t)&&t.autoReview!==false)created=generateReviews(t,true);save();render();if(created)toast(created+' revisão(ões) criada(s) para '+t.content+' (D+2 / D+7 / D+14).')}
 function attachDnD(){document.querySelectorAll('.task').forEach(el=>{el.addEventListener('dragstart',e=>e.dataTransfer.setData('text/plain',el.dataset.id))});document.querySelectorAll('.day').forEach(el=>{el.addEventListener('dragover',e=>e.preventDefault());el.addEventListener('drop',e=>{e.preventDefault();let id=e.dataTransfer.getData('text/plain'),t=state.tasks.find(x=>x.id===id);if(t){t.date=el.dataset.date;save();render()}})})}
 function openObservation(id){
  const t=state.tasks.find(x=>x.id===id);if(!t)return;
@@ -126,11 +200,205 @@ function openObservation(id){
  dlg.querySelector('#clearObs').onclick=()=>{if(confirm('Apagar a observação deste bloco?')){t.note='';save();dlg.close();render()}};
  dlg.addEventListener('close',()=>dlg.remove());
 }
-function openTask(id=null,date=null){let t=id?state.tasks.find(x=>x.id===id):null;const dlg=document.createElement('dialog');dlg.innerHTML=`<div class="dialog-head"><strong>${t?'Editar':'Nova'} tarefa</strong><button class="mini" onclick="this.closest('dialog').close()">✕</button></div><div class="dialog-body"><div class="form-grid"><div class="field"><label>Data</label><input id="fDate" type="date" value="${t?t.date:(date||state.weekStart)}"></div><div class="field"><label>Horário</label><input id="fTime" type="time" value="${t?t.time:'08:00'}"></div><div class="field"><label>Área</label><select id="fArea">${['MAT','CN','MISTO','ADAPTATIVO','REVISÃO'].map(x=>`<option ${t&&t.area===x?'selected':''}>${x}</option>`).join('')}</select></div><div class="field"><label>Duração (min)</label><input id="fDuration" type="number" min="10" value="${t?t.duration:80}"></div><div class="field full"><label>Conteúdo</label><input id="fContent" value="${esc(t?t.content:'')}"></div><div class="field full"><label>Estratégia / modo</label><textarea id="fMode">${esc(t?t.mode:'Microaula curta + questões médias + correção')}</textarea></div></div></div><div class="dialog-foot">${t?'<button class="btn danger" id="delTask">Excluir</button>':''}<button class="btn" onclick="this.closest('dialog').close()">Cancelar</button><button class="btn primary" id="saveTask">Salvar</button></div>`;document.body.appendChild(dlg);dlg.showModal();dlg.querySelector('#saveTask').onclick=()=>{const obj={id:t?t.id:uid(),date:dlg.querySelector('#fDate').value,time:dlg.querySelector('#fTime').value,area:dlg.querySelector('#fArea').value,duration:Number(dlg.querySelector('#fDuration').value)||80,content:dlg.querySelector('#fContent').value.trim()||'Estudo',mode:dlg.querySelector('#fMode').value.trim(),done:t?t.done:false,hits:t?t.hits:'',misses:t?t.misses:'',note:t?t.note:''};if(t)Object.assign(t,obj);else state.tasks.push(obj);save();dlg.close();render()};if(t)dlg.querySelector('#delTask').onclick=()=>{if(confirm('Excluir este bloco?')){state.tasks=state.tasks.filter(x=>x.id!==t.id);save();dlg.close();render()}};dlg.addEventListener('close',()=>dlg.remove())}
-function openError(){const dlg=document.createElement('dialog');const contents=[...priorities.MAT,...priorities.CN];dlg.innerHTML=`<div class="dialog-head"><strong>Registrar erro</strong><button class="mini" onclick="this.closest('dialog').close()">✕</button></div><div class="dialog-body"><div class="form-grid"><div class="field"><label>Data</label><input id="eDate" type="date" value="${new Date().toISOString().slice(0,10)}"></div><div class="field"><label>Tipo</label><select id="eType"><option>Conteúdo</option><option>Interpretação</option><option>Estratégia</option><option>Cálculo</option><option>Distração</option></select></div><div class="field full"><label>Conteúdo</label><input id="eContent" list="contents"><datalist id="contents">${contents.map(x=>`<option value="${esc(x)}">`).join('')}</datalist></div><div class="field full"><label>O que aconteceu / regra para próxima vez</label><textarea id="eNote"></textarea></div></div></div><div class="dialog-foot"><button class="btn" onclick="this.closest('dialog').close()">Cancelar</button><button class="btn primary" id="saveErr">Salvar</button></div>`;document.body.appendChild(dlg);dlg.showModal();dlg.querySelector('#saveErr').onclick=()=>{state.errors.push({id:uid(),date:dlg.querySelector('#eDate').value,type:dlg.querySelector('#eType').value,content:dlg.querySelector('#eContent').value.trim(),note:dlg.querySelector('#eNote').value.trim()});save();dlg.close();render()};dlg.addEventListener('close',()=>dlg.remove())}
+function openTask(id=null,date=null){let t=id?state.tasks.find(x=>x.id===id):null;const dlg=document.createElement('dialog');dlg.innerHTML=`<div class="dialog-head"><strong>${t?'Editar':'Nova'} tarefa</strong><button class="mini" onclick="this.closest('dialog').close()">✕</button></div><div class="dialog-body"><div class="form-grid"><div class="field"><label>Data</label><input id="fDate" type="date" value="${t?t.date:(date||state.weekStart)}"></div><div class="field"><label>Horário</label><input id="fTime" type="time" value="${t?t.time:'08:00'}"></div><div class="field"><label>Área</label><select id="fArea">${['MAT','CN','MISTO','ADAPTATIVO','REVISÃO'].map(x=>`<option ${t&&t.area===x?'selected':''}>${x}</option>`).join('')}</select></div><div class="field"><label>Duração (min)</label><input id="fDuration" type="number" min="10" value="${t?t.duration:80}"></div><div class="field full"><label>Conteúdo</label><input id="fContent" value="${esc(t?t.content:'')}"></div><div class="field full"><label>Estratégia / modo</label><textarea id="fMode">${esc(t?t.mode:'Microaula curta + questões médias + correção')}</textarea></div>${t&&t.reviewType?`<div class="field full"><div class="callout">Revisão <strong>${esc(t.reviewType)}</strong> gerada automaticamente${t.parentTaskId&&state.tasks.find(x=>x.id===t.parentTaskId)?` a partir do bloco de ${formatDate(state.tasks.find(x=>x.id===t.parentTaskId).date)}`:''}.</div></div>`:`<label class="auto-rev full" style="font-size:12.5px"><input id="fAutoReview" type="checkbox" ${!t||t.autoReview!==false?'checked':''}> Criar revisões automáticas (D+2 / D+7 / D+14) ao concluir — vale só para MAT e CN</label>`}</div></div><div class="dialog-foot">${t?'<button class="btn danger" id="delTask">Excluir</button>':''}<button class="btn" onclick="this.closest('dialog').close()">Cancelar</button><button class="btn primary" id="saveTask">Salvar</button></div>`;document.body.appendChild(dlg);dlg.showModal();dlg.querySelector('#saveTask').onclick=()=>{const obj={id:t?t.id:uid(),date:dlg.querySelector('#fDate').value,time:dlg.querySelector('#fTime').value,area:dlg.querySelector('#fArea').value,duration:Number(dlg.querySelector('#fDuration').value)||80,content:dlg.querySelector('#fContent').value.trim()||'Estudo',mode:dlg.querySelector('#fMode').value.trim(),done:t?t.done:false,hits:t?t.hits:'',misses:t?t.misses:'',note:t?t.note:''};const autoBox=dlg.querySelector('#fAutoReview');if(autoBox)obj.autoReview=autoBox.checked;if(t)Object.assign(t,obj);else state.tasks.push(obj);save();dlg.close();render()};if(t)dlg.querySelector('#delTask').onclick=()=>{if(confirm('Excluir este bloco?')){state.tasks=state.tasks.filter(x=>x.id!==t.id);save();dlg.close();render()}};dlg.addEventListener('close',()=>dlg.remove())}
+function openError(){const dlg=document.createElement('dialog');const contents=[...priorities.MAT,...priorities.CN];dlg.innerHTML=`<div class="dialog-head"><strong>Registrar erro</strong><button class="mini" onclick="this.closest('dialog').close()">✕</button></div><div class="dialog-body"><div class="form-grid"><div class="field"><label>Data</label><input id="eDate" type="date" value="${todayISO()}"></div><div class="field"><label>Tipo</label><select id="eType">${ERROR_TYPES.map(x=>`<option>${x}</option>`).join('')}</select></div><div class="field full"><label>Conteúdo</label><input id="eContent" list="contents"><datalist id="contents">${contents.map(x=>`<option value="${esc(x)}">`).join('')}</datalist></div><div class="field full"><label>O que aconteceu / regra para próxima vez</label><textarea id="eNote"></textarea></div></div></div><div class="dialog-foot"><button class="btn" onclick="this.closest('dialog').close()">Cancelar</button><button class="btn primary" id="saveErr">Salvar</button></div>`;document.body.appendChild(dlg);dlg.showModal();dlg.querySelector('#saveErr').onclick=()=>{state.errors.push({id:uid(),date:dlg.querySelector('#eDate').value,type:dlg.querySelector('#eType').value,content:dlg.querySelector('#eContent').value.trim(),note:dlg.querySelector('#eNote').value.trim()});save();dlg.close();render()};dlg.addEventListener('close',()=>dlg.remove())}
 function deleteError(id){state.errors=state.errors.filter(x=>x.id!==id);save();render()}
 function exportData(){const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='foco-enem-backup.json';a.click();URL.revokeObjectURL(a.href)}
-function importData(){const i=document.createElement('input');i.type='file';i.accept='.json';i.onchange=()=>{const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x.tasks)throw 0;state=x;save();render();alert('Backup importado.')}catch(e){alert('Arquivo inválido.')}};r.readAsText(i.files[0])};i.click()}
+function importData(){const i=document.createElement('input');i.type='file';i.accept='.json';i.onchange=()=>{const r=new FileReader();r.onload=()=>{try{const x=migrate(JSON.parse(r.result));if(!x)throw 0;state=x;save();render();alert('Backup importado.')}catch(e){alert('Arquivo inválido.')}};r.readAsText(i.files[0])};i.click()}
+/* ===== Utilitários ===== */
+function todayISO(){const n=new Date();return `${n.getFullYear()}-${String(n.getMonth()+1).padStart(2,'0')}-${String(n.getDate()).padStart(2,'0')}`}
+function daysBetween(a,b){return Math.round((d(b)-d(a))/86400000)}
+function norm(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim()}
+// Unifica nomes livres ("Estequiometria", "mecânica") com os conteúdos cadastrados.
+function canonical(name){
+ const n=norm(name);if(!n)return '';
+ for(const k of ALL_CONTENTS){
+  const nk=norm(k),parts=nk.split('/').map(p=>p.trim());
+  if(nk===n||parts.includes(n))return k;
+  if(n.length>=5&&(nk.startsWith(n)||parts.some(p=>p.startsWith(n)||(p.length>=5&&n.startsWith(p)))))return k;
+ }
+ return String(name).trim();
+}
+function isContentTask(t){return CONTENT_AREAS.includes(t.area)}
+function canReview(t){return isContentTask(t)&&!t.reviewType}
+function isOverdueReview(t){return !!t.reviewType&&!t.done&&t.date<todayISO()}
+function areaFor(c){if(priorities.MAT.includes(c))return 'MAT';if(priorities.CN.includes(c))return 'CN';const t=state.tasks.find(x=>isContentTask(x)&&canonical(x.content)===c);return t?t.area:'MAT'}
+function latestLesson(pred){return state.microLessons.filter(pred).sort((a,b)=>(b.createdAt||b.date).localeCompare(a.createdAt||a.date))[0]||null}
+function accClass(a){return a>=85?'high':a>=70?'mid':'low'}
+function toast(msg){document.querySelectorAll('.toast').forEach(x=>x.remove());const el=document.createElement('div');el.className='toast';el.setAttribute('role','status');el.textContent=msg;document.body.appendChild(el);setTimeout(()=>el.remove(),3600)}
+const LEVEL_LABEL={alta:'Alta',media:'Média',atencao:'Atenção'};
+
+/* ===== Funcionalidade 1 + 5: análise por conteúdo ===== */
+function analyze(){
+ const today=todayISO(),map={};
+ const get=c=>map[c]||(map[c]={content:c,h:0,m:0,daily:{},notebook:[],types:{},overdue:[],lesson:null});
+ state.tasks.forEach(t=>{
+  if(!isContentTask(t))return;
+  const x=get(canonical(t.content)),h=Number(t.hits)||0,m=Number(t.misses)||0;
+  x.h+=h;x.m+=m;
+  if(m>0){const dd=x.daily[t.date]||(x.daily[t.date]={task:0,nb:0});dd.task+=m}
+  if(isOverdueReview(t))x.overdue.push(t);
+ });
+ state.errors.forEach(e=>{
+  const c=canonical(e.content);if(!c)return;
+  const x=get(c);x.notebook.push(e);
+  const dd=x.daily[e.date]||(x.daily[e.date]={task:0,nb:0});dd.nb++;
+  x.types[e.type]=(x.types[e.type]||0)+1;
+ });
+ state.microLessons.forEach(l=>{const x=get(canonical(l.content));if(!x.lesson||(l.createdAt||l.date)>(x.lesson.createdAt||x.lesson.date))x.lesson=l});
+ return Object.values(map).map(x=>{
+  // Uma sessão = um dia com erro no conteúdo. Erros do caderno e ✕ da tarefa no mesmo dia não somam em dobro.
+  const days=Object.entries(x.daily).map(([date,v])=>({date,errors:Math.max(v.task,v.nb)})).filter(s=>s.errors>0);
+  const recentDays=days.filter(s=>daysBetween(s.date,today)<RECENT_DAYS);
+  const cap=s=>Math.min(s.errors,SESSION_ERROR_CAP);
+  const sessions=days.length,recentSessions=recentDays.length;
+  const totalErrors=days.reduce((a,s)=>a+s.errors,0),cappedTotal=days.reduce((a,s)=>a+cap(s),0);
+  const recentErrors=recentDays.reduce((a,s)=>a+s.errors,0),recentCapped=recentDays.reduce((a,s)=>a+cap(s),0);
+  const q=x.h+x.m,acc=q>=MIN_QUESTIONS_FOR_ACC?Math.round(x.h/q*100):null;
+  const accPenalty=acc==null?0:acc<60?10:acc<75?6:acc<85?3:0;
+  const recurrenceScore=sessions*3+recentCapped*2+cappedTotal+accPenalty;
+  let level=null;
+  if(sessions>=4||(sessions>=3&&recurrenceScore>=24))level='alta';
+  else if(sessions>=2&&(recentSessions>=2||recurrenceScore>=12))level='media';
+  else if(acc!=null&&acc<85)level='atencao';
+  const typeEntries=Object.entries(x.types).sort((a,b)=>b[1]-a[1]);
+  const dominantType=typeEntries.length?typeEntries[0][0]:null;
+  const weakTopics=x.lesson?x.lesson.weakTopics:[],notExplained=!!x.lesson&&x.lesson.explained===false;
+  const accTxt=acc!=null?` e está com ${acc}% de precisão`:'';
+  const recTxt=recentSessions?` (${recentSessions} nos últimos ${RECENT_DAYS} dias)`:'';
+  let alertTitle='',alertReason='';
+  if(level==='alta'){alertTitle=`erro recorrente em ${sessions} sessões`;alertReason=`Prioridade alta porque você errou ${x.content} em ${sessions} sessões diferentes${recTxt}${accTxt}.`}
+  else if(level==='media'){alertTitle=`${sessions} reincidências`;alertReason=`Atenção: ${x.content} voltou a aparecer nos erros em ${sessions} sessões${recTxt}${accTxt}.`}
+  else if(level==='atencao'){alertTitle='desempenho abaixo da meta';alertReason=`${x.content} está com ${acc}% de precisão em ${q} questões, abaixo da meta de 85%.`}
+  // Score "Se a prova fosse amanhã" (0–100): recorrência 40 · erros recentes 20 · precisão 20 · lacunas 12 · revisões atrasadas 8.
+  const parts={
+   recorrencia:Math.min(40,sessions*6+recentSessions*4),
+   recentes:Math.min(20,recentCapped*2.5),
+   precisao:acc==null?0:Math.max(0,Math.min(20,(90-acc)*0.6)),
+   lacunas:Math.min(12,weakTopics.length*3+(notExplained?3:0)),
+   atrasadas:Math.min(8,x.overdue.length*4)
+  };
+  const priority=Math.min(100,Math.round(Object.values(parts).reduce((a,b)=>a+b,0)));
+  return {content:x.content,area:areaFor(x.content),h:x.h,m:x.m,questions:q,acc,sessions,recentSessions,totalErrors,recentErrors,recurrenceScore,accPenalty,level,alertTitle,alertReason,types:x.types,dominantType,notebook:x.notebook,lesson:x.lesson,weakTopics,notExplained,overdue:x.overdue,parts,priority};
+ });
+}
+function alertsHtml(){
+ const order={alta:0,media:1,atencao:2};
+ const list=insights.filter(x=>x.level).sort((a,b)=>order[a.level]-order[b.level]||b.recurrenceScore-a.recurrenceScore).slice(0,8);
+ if(!list.length)return '<div class="empty">Nenhuma reincidência detectada ainda. Registre ✕ nas tarefas e erros no caderno para o detector começar a funcionar.</div>';
+ return `<div class="alert-list">${list.map(x=>`<div class="alert ${x.level}"><span class="dot ${x.level}" aria-hidden="true"></span><div><strong>${esc(x.content)}</strong> <span style="color:var(--muted);font-size:13px">— ${esc(x.alertTitle)}</span><p>${esc(x.alertReason)}</p><div class="meta">Score de reincidência ${x.recurrenceScore} · ${x.sessions} sessão(ões) com erro · ${x.recentErrors} erro(s) recente(s) · ${x.totalErrors} no total · precisão ${x.acc==null?'sem dados suficientes':x.acc+'%'}</div></div></div>`).join('')}</div><div class="meta" style="margin-top:10px;font-size:11.5px;color:var(--muted)">Score = sessões com erro × 3 + erros recentes × 2 + total de erros + penalidade por precisão baixa (até ${SESSION_ERROR_CAP} erros por sessão entram na conta, para que uma única lista ruim não domine).</div>`;
+}
+
+/* ===== Funcionalidade 2: revisões D+2 / D+7 / D+14 ===== */
+function generateReviews(t,auto=false){
+ if(!canReview(t)){if(!auto)toast('Revisões automáticas não se aplicam a tarefas MISTO, REVISÃO ou ADAPTATIVO.');return 0}
+ const c=canonical(t.content);
+ const pending=REVIEW_PLAN.filter(r=>{const date=addDays(t.date,r.days);return !state.tasks.some(x=>x.reviewType===r.type&&(x.parentTaskId===t.id||(x.date===date&&canonical(x.content)===c)))});
+ if(!pending.length){if(!auto)toast('As revisões deste bloco já existem.');return 0}
+ const late=pending.filter(r=>addDays(t.date,r.days)>END);
+ const allowLate=late.length?confirm(`${late.map(r=>`${r.type} (${formatDate(addDays(t.date,r.days))})`).join(', ')} cairia depois de 10/11. Criar mesmo assim?`):false;
+ let n=0;
+ pending.forEach(r=>{
+  const date=addDays(t.date,r.days);if(date>END&&!allowLate)return;
+  state.tasks.push({id:uid(),date,area:t.area,content:t.content,time:'18:30',duration:r.duration,mode:r.mode,done:false,hits:'',misses:'',note:'',parentTaskId:t.id,reviewType:r.type});n++;
+ });
+ return n;
+}
+function manualReviews(id){const t=state.tasks.find(x=>x.id===id);if(!t)return;const n=generateReviews(t,false);if(n){save();render();toast(`${n} revisão(ões) criada(s) para ${t.content}.`)}}
+function setAutoReview(id,on){const t=state.tasks.find(x=>x.id===id);if(t){t.autoReview=on;save()}}
+
+/* ===== Funcionalidade 3: microaula ===== */
+function openMicro(id){
+ const t=state.tasks.find(x=>x.id===id);if(!t)return;
+ const c=canonical(t.content),topics=checklists[c]||DEFAULT_CHECKLIST,prev=latestLesson(l=>canonical(l.content)===c);
+ let remaining=MICRO_SECONDS,elapsed=0,timer=null;
+ const dlg=document.createElement('dialog');
+ dlg.innerHTML=`<div class="dialog-head"><strong>Microaula — ${esc(c)}</strong><button class="mini" onclick="this.closest('dialog').close()">✕</button></div><div class="dialog-body"><div class="timer"><div><div class="kicker">Explique sem consulta</div><div class="timer-num" id="mTime" aria-live="off">15:00</div></div><div class="actions"><button class="btn primary" id="mStart">Iniciar</button><button class="btn" id="mPause">Pausar</button><button class="btn ghost" id="mReset">Zerar</button></div></div>${prev?`<div class="callout" style="margin-bottom:12px">Última microaula (${formatDate(prev.date)}): ${prev.masteredTopics.length}/${prev.masteredTopics.length+prev.weakTopics.length} tópicos dominados${prev.weakTopics.length?` · lacunas: ${esc(prev.weakTopics.join(', '))}`:''}</div>`:''}<div class="kicker">Marque o que você conseguiu explicar com clareza</div><div class="checklist">${topics.map((x,i)=>`<label><input type="checkbox" value="${i}"> ${esc(x)}</label>`).join('')}</div><div class="field"><label for="mNote">Lacunas / observações</label><textarea id="mNote" placeholder="Ex.: travei em reagente limitante; não sei quando usar pureza antes ou depois."></textarea></div></div><div class="dialog-foot"><button class="btn" onclick="this.closest('dialog').close()">Cancelar</button><button class="btn danger" id="mFail">Não consegui explicar</button><button class="btn good" id="mOk">Consegui explicar</button></div>`;
+ document.body.appendChild(dlg);dlg.showModal();
+ const out=dlg.querySelector('#mTime');
+ const paint=()=>{const s=Math.max(0,remaining);out.textContent=`${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;out.classList.toggle('over',remaining<=0)};
+ const stop=()=>{clearInterval(timer);timer=null};
+ dlg.querySelector('#mStart').onclick=()=>{if(timer||remaining<=0)return;timer=setInterval(()=>{remaining--;elapsed++;paint();if(remaining<=0){stop();out.textContent='Tempo!'}},1000)};
+ dlg.querySelector('#mPause').onclick=stop;
+ dlg.querySelector('#mReset').onclick=()=>{stop();remaining=MICRO_SECONDS;elapsed=0;paint()};
+ const finish=explained=>{
+  stop();
+  const checked=new Set([...dlg.querySelectorAll('.checklist input:checked')].map(i=>Number(i.value)));
+  const lesson={id:uid(),date:todayISO(),createdAt:new Date().toISOString(),taskId:t.id,content:c,duration:Math.round(elapsed/60),durationSeconds:elapsed,masteredTopics:topics.filter((_,i)=>checked.has(i)),weakTopics:topics.filter((_,i)=>!checked.has(i)),note:dlg.querySelector('#mNote').value.trim(),explained};
+  state.microLessons.push(lesson);save();dlg.close();render();
+  toast(`Microaula: ${lesson.masteredTopics.length}/${topics.length} tópicos dominados.`);
+ };
+ dlg.querySelector('#mOk').onclick=()=>finish(true);
+ dlg.querySelector('#mFail').onclick=()=>finish(false);
+ dlg.addEventListener('close',()=>{stop();dlg.remove()});
+}
+
+/* ===== Funcionalidade 4: por que estou errando? ===== */
+function typeCounts(list){const c=Object.fromEntries(ERROR_TYPES.map(t=>[t,0]));list.forEach(e=>{if(c[e.type]==null)c[e.type]=0;c[e.type]++});return c}
+function whyHtml(){
+ const errs=state.errors;
+ if(!errs.length)return `<div class="section-title"><h2>Por que estou errando?</h2></div><div class="card panel"><div class="empty">Registre erros com o tipo para ver o mapa de causas.</div></div>`;
+ const today=todayISO(),total=errs.length,counts=typeCounts(errs);
+ const recent=errs.filter(e=>daysBetween(e.date,today)<RECENT_DAYS),older=errs.filter(e=>daysBetween(e.date,today)>=RECENT_DAYS);
+ const rc=typeCounts(recent),oc=typeCounts(older);
+ const canTrend=recent.length>=3&&older.length>=3;
+ const sorted=Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+ const top=sorted[0][0];
+ const rows=sorted.map(([type,n])=>{
+  const pct=Math.round(n/total*100);
+  let trend=`${rc[type]||0} nos últimos ${RECENT_DAYS} dias`;
+  if(canTrend){const diff=Math.round((rc[type]||0)/recent.length*100-(oc[type]||0)/older.length*100);trend=diff>=10?`subindo (+${diff} p.p.)`:diff<=-10?`caindo (${diff} p.p.)`:'estável'}
+  return `<div class="type-row"><div>${esc(type)}<span class="trend">${trend}</span></div><div class="bar"><i style="width:${pct}%;background:${TYPE_COLORS[type]||'#64748b'}"></i></div><div class="val"><strong>${pct}%</strong> <span style="color:var(--muted)">(${n})</span></div></div>`;
+ }).join('');
+ const byContent={};errs.forEach(e=>{const c=canonical(e.content)||'Sem conteúdo';(byContent[c]=byContent[c]||[]).push(e)});
+ const contentCards=Object.entries(byContent).filter(([,l])=>l.length>=2).sort((a,b)=>b[1].length-a[1].length).map(([c,l])=>{
+  const cc=Object.entries(typeCounts(l)).filter(([,n])=>n>0).sort((a,b)=>b[1]-a[1]);
+  return `<div class="mini-card"><h4>${esc(c)} <span style="color:var(--muted);font-weight:500;font-size:12px">· ${l.length} erros</span></h4><div class="stack" role="img" aria-label="${esc(cc.map(([t,n])=>`${t} ${Math.round(n/l.length*100)}%`).join(', '))}">${cc.map(([t,n])=>`<i style="width:${n/l.length*100}%;background:${TYPE_COLORS[t]||'#64748b'}"></i>`).join('')}</div><div class="legend">${cc.map(([t,n])=>`<span><b style="background:${TYPE_COLORS[t]||'#64748b'}"></b>${Math.round(n/l.length*100)}% ${esc(t.toLowerCase())}</span>`).join('')}</div><div class="advice">${esc(TYPE_ADVICE[cc[0][0]]||'')}</div></div>`;
+ }).join('');
+ return `<div class="section-title"><h2>Por que estou errando?</h2><span>${total} erro(s) classificados${canTrend?` · tendência: últimos ${RECENT_DAYS} dias vs. antes`:''}</span></div><div class="split"><div class="card panel">${rows}</div><div class="card panel"><div class="kicker">Tipo mais frequente</div><h3 style="margin:6px 0 4px">${esc(top)} · ${Math.round(counts[top]/total*100)}%</h3><p style="margin:0 0 12px;color:#cbd7ef">${esc(TYPE_ADVICE[top]||'')}</p>${sorted[1]&&sorted[1][1]>0?`<div class="kicker">Segundo lugar</div><p style="margin:6px 0 0;color:#cbd7ef"><strong>${esc(sorted[1][0])}</strong> (${Math.round(sorted[1][1]/total*100)}%) — ${esc(TYPE_ADVICE[sorted[1][0]]||'')}</p>`:''}</div></div>${contentCards?`<div class="section-title"><h2>Análise por conteúdo</h2><span>Conteúdos com 2+ erros no caderno</span></div><div class="content-grid">${contentCards}</div>`:''}`;
+}
+
+/* ===== Funcionalidade 5: se a prova fosse amanhã ===== */
+function recommendationFor(x){
+ const steps=[];
+ if(x.weakTopics.length||x.notExplained||x.dominantType==='Conteúdo')steps.push(`15 min microaula${x.weakTopics.length?` (foco: ${x.weakTopics.slice(0,3).join(', ')})`:''}`);
+ if(x.overdue.length)steps.push(`fazer a revisão ${[...new Set(x.overdue.map(t=>t.reviewType))].join(' / ')} atrasada`);
+ const n=x.acc!=null&&x.acc<70?12:10;
+ const byType={'Interpretação':`${n} questões médias variadas, explicando o que o enunciado pede antes da conta`,'Estratégia':`${n} questões médias identificando o método antes de calcular`,'Cálculo':`treino operacional curto + ${n} questões médias`,'Distração':`${n} questões médias com checklist final antes de marcar`,'Falta de tempo':`${n} questões médias em bloco cronometrado (~3 min cada)`};
+ steps.push(byType[x.dominantType]||`${n} questões médias direcionadas`);
+ if(x.notebook.length)steps.push(`corrigir ${Math.min(3,x.notebook.length)} erro(s) antigo(s) do caderno`);
+ const s=steps.join(' + ');return s.charAt(0).toUpperCase()+s.slice(1);
+}
+function reasonsFor(x){
+ const r=[];
+ if(x.sessions)r.push(`Errou em ${x.sessions} sessão(ões) diferentes${x.recentSessions?`, ${x.recentSessions} nos últimos ${RECENT_DAYS} dias`:''} (+${Math.round(x.parts.recorrencia)})`);
+ if(x.parts.recentes)r.push(`${x.recentErrors} erro(s) recente(s) (+${Math.round(x.parts.recentes)})`);
+ if(x.parts.precisao)r.push(`Precisão de ${x.acc}% em ${x.questions} questões, abaixo da meta de 90% (+${Math.round(x.parts.precisao)})`);
+ if(x.parts.lacunas)r.push(`Microaula com ${x.weakTopics.length} tópico(s) não dominado(s)${x.notExplained?' e explicação incompleta':''} (+${Math.round(x.parts.lacunas)})`);
+ if(x.parts.atrasadas)r.push(`${x.overdue.length} revisão(ões) atrasada(s) (+${Math.round(x.parts.atrasadas)})`);
+ return r;
+}
+function tomorrowView(){
+ const dataPoints=state.tasks.reduce((a,t)=>a+(Number(t.hits)||0)+(Number(t.misses)||0),0)+state.errors.length+state.microLessons.length;
+ const ranked=insights.filter(x=>x.priority>=10).sort((a,b)=>b.priority-a.priority).slice(0,5);
+ const intro=`<div class="callout">Ranking calculado só com os seus registros: reincidência (até 40), erros recentes (até 20), precisão baixa (até 20), lacunas de microaula (até 12) e revisões atrasadas (até 8). Conforme você melhora, a prioridade cai sozinha.</div>`;
+ if(dataPoints<8||!ranked.length)return `<section class="section active">${intro}<div class="card panel" style="margin-top:14px"><div class="empty"><strong style="color:var(--txt);font-size:15px">Ainda não há dados suficientes para montar uma prioridade confiável.</strong><br><br>Registre acertos (✓) e erros (✕) nas tarefas, catalogue erros no caderno ou faça microaulas.</div></div></section>`;
+ const today=todayISO();
+ return `<section class="section active">${intro}${ranked.length<5?`<p style="color:var(--muted);font-size:13px">Só ${ranked.length} conteúdo(s) têm dados suficientes para entrar no ranking.</p>`:''}<div class="rank" style="margin-top:14px">${ranked.map((x,i)=>{
+  const lvl=x.priority>=60?'alta':x.priority>=35?'media':'';
+  const already=state.tasks.some(t=>t.date===today&&t.source==='prova-amanha'&&canonical(t.content)===x.content);
+  return `<article class="card rank-item ${lvl}"><div class="rank-head"><div class="rank-num">${i+1}</div><div><h3>${esc(x.content)}</h3><span style="color:var(--muted);font-size:12px">${esc(x.area)}</span></div><div class="score"><b>${x.priority}</b><span style="color:var(--muted)">/100</span><small>prioridade</small></div></div><div class="score-bar" role="img" aria-label="Prioridade ${x.priority} de 100"><i style="width:${x.priority}%"></i></div><div class="kv"><div><span>Precisão</span><b class="${x.acc==null?'':accClass(x.acc)}">${x.acc==null?'sem dados suficientes':x.acc+'%'}</b></div><div><span>Sessões com erro</span><b>${x.sessions}</b></div><div><span>Principal problema</span><b>${esc(x.dominantType?x.dominantType.toLowerCase():'não classificado')}</b></div><div><span>Lacunas de microaula</span><b>${x.lesson?`${x.weakTopics.length} de ${x.weakTopics.length+x.lesson.masteredTopics.length}`:'sem microaula'}</b></div><div><span>Revisão atrasada</span><b class="${x.overdue.length?'low':''}">${x.overdue.length?esc([...new Set(x.overdue.map(t=>t.reviewType))].join(', ')):'nenhuma'}</b></div></div><div><div class="kicker" style="margin-bottom:6px">Por que está aqui</div><ul class="reasons">${reasonsFor(x).map(r=>`<li>${esc(r)}</li>`).join('')}</ul>${x.weakTopics.length?`<p style="margin:8px 0 0;font-size:12.5px;color:var(--muted)">Tópicos não dominados: ${esc(x.weakTopics.join(', '))}</p>`:''}</div><div class="reco"><strong>Recomendação hoje</strong>${esc(recommendationFor(x))}</div><div class="rank-foot"><span>Método: ${esc(subjectRules[x.content]||'Treinar reconhecimento, execução e correção do padrão.')}</span><button class="btn ${already?'':'primary'}" data-content="${esc(x.content)}" onclick="addToToday(this.dataset.content)" ${already?'disabled':''}>${already?'Já está no cronograma de hoje':'Adicionar ao cronograma de hoje'}</button></div></article>`;
+ }).join('')}</div></section>`;
+}
+function addToToday(content){
+ const x=insightMap[content];if(!x)return;
+ const today=todayISO();
+ if(state.tasks.some(t=>t.date===today&&t.source==='prova-amanha'&&canonical(t.content)===content)){toast('Esse conteúdo já está no cronograma de hoje.');return}
+ state.tasks.push({id:uid(),date:today,area:x.area,content,time:'19:00',duration:60,mode:recommendationFor(x),done:false,hits:'',misses:'',note:'',source:'prova-amanha'});
+ save();render();toast(`${content} adicionado ao cronograma de hoje (${formatDate(today)}).`);
+}
+
+save();
 render();
 </script>
 </body>
